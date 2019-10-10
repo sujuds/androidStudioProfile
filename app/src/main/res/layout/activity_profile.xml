@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile">
+
+    <LinearLayout
+        android:id="@+id/bg_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/bg_foto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="360dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/foto" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="360dp"
+                android:background="@drawable/custom_bgprofile"/>
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="@string/username"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="33dp"
+                android:textColor="@android:color/white"/>
+
+            <ImageButton
+                android:id="@+id/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_chevron_left_black_24dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/foto_profile"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="90dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/foto" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sujud Satwikayana"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="220dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Klungkung, Bali, Indonesia"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="257dp"
+                android:textSize="12sp"
+                android:textColor="@android:color/white"
+                android:drawableLeft="@drawable/ic_location_on_black_24dp"/>
+
+            <Button
+                android:id="@+id/btn_follow"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:background="@drawable/custom_button"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="290dp"
+                android:text="Follow"
+                android:textColor="@android:color/white"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <TextView
+                android:drawableStart="@drawable/ic_favorite_border_black_24dp"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="3008"
+                android:textColor="@android:color/black"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingTop="20dp"
+                android:layout_toStartOf="@+id/tv_following"/>
+            <TextView
+                android:id="@+id/tv_following"
+                android:drawableStart="@drawable/ic_person_outline_black_24dp"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="1999"
+                android:textColor="@android:color/black"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingTop="20dp"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:drawableStart="@drawable/ic_cloud_queue_black_24dp"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="100"
+                android:textColor="@android:color/black"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingTop="20dp"
+                android:layout_toEndOf="@+id/tv_following"/>
+
+
+
+            <TextView
+                android:id="@+id/tv_following2"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="Following"
+                android:paddingTop="45dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingBottom="20dp"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="Followers"
+                android:layout_toStartOf="@+id/tv_following2"
+                android:paddingTop="45dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingBottom="20dp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="Posts"
+                android:layout_toEndOf="@+id/tv_following2"
+                android:paddingTop="45dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingBottom="20dp"
+                android:textAlignment="center"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#DDDDDD" >
+
+            <TextView
+                android:id="@+id/tv_information"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Information"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Posts"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/tv_information"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:background="#DDDDDD">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/custom_bggradient">
+
+                <TextView
+                    android:textColor="@android:color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="30 Agustus 1999"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/ic_cake_black_24dp" />
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="85dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/custom_bggradient2">
+
+                <TextView
+                    android:textColor="@android:color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="+62822-4737-0043"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/ic_contact_phone_black_24dp" />
+            </FrameLayout>
+
+            <Button
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:text="+"
+                android:textSize="20sp"
+                android:layout_marginTop="160dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/custom_button2" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
