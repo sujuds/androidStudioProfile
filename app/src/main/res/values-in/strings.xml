@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Profil Sujud</string>
+    <string name="username">\@sujudss</string>
+    <string name="name">Sujud Satwikayana</string>
+    <string name="address">Klungkung, Bali, Indonesia</string>
+    <string name="str_btn_follow">Ikuti</string>
+    <string name="followers">Pengikut</string>
+    <string name="following">Mengikuti</string>
+    <string name="posts">Postingan</string>
+    <string name="information">Informasi</string>
+    <string name="birth">30 Agustus 1999</string>
+    <string name="hp">+62822-4737-0043</string>
+</resources>

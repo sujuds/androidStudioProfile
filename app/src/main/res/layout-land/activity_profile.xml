@@ -22,26 +22,30 @@
                 android:layout_height="360dp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/foto" />
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="360dp"
                 android:background="@drawable/custom_bgprofile"/>
 
-            <androidx.appcompat.widget.Toolbar
-                android:id="@+id/toolbar"
-                android:minHeight="?attr/actionBarSize"
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:titleTextColor="?attr/colorPrimary" >
-                <TextView
-                    android:id="@+id/toolbar_title"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/username"
-                    android:textColor="@android:color/white"
-                    style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
-                    android:layout_gravity="center" />
-            </androidx.appcompat.widget.Toolbar>
+                android:textSize="18sp"
+                android:text="@string/username"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="33dp"
+                android:textColor="@android:color/white"/>
+
+            <ImageButton
+                android:id="@+id/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_chevron_left_black_24dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp" />
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/foto_profile"
@@ -54,7 +58,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/name"
+                android:text="Sujud Satwikayana"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="220dp"
                 android:textStyle="bold"
@@ -64,7 +68,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/address"
+                android:text="Klungkung, Bali, Indonesia"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="257dp"
                 android:textSize="12sp"
@@ -78,7 +82,7 @@
                 android:background="@drawable/custom_button"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="290dp"
-                android:text="@string/str_btn_follow"
+                android:text="Follow"
                 android:textColor="@android:color/white"/>
         </RelativeLayout>
 
@@ -89,7 +93,7 @@
                 android:drawableStart="@drawable/ic_favorite_border_black_24dp"
                 android:layout_width="140dp"
                 android:layout_height="wrap_content"
-                android:text="300"
+                android:text="3008"
                 android:textColor="@android:color/black"
                 android:textSize="19sp"
                 android:textStyle="bold"
@@ -116,7 +120,7 @@
                 android:drawableStart="@drawable/ic_cloud_queue_black_24dp"
                 android:layout_width="140dp"
                 android:layout_height="wrap_content"
-                android:text="8"
+                android:text="100"
                 android:textColor="@android:color/black"
                 android:textSize="19sp"
                 android:textStyle="bold"
@@ -132,7 +136,7 @@
                 android:id="@+id/tv_following2"
                 android:layout_width="140dp"
                 android:layout_height="wrap_content"
-                android:text="@string/following"
+                android:text="Following"
                 android:paddingTop="45dp"
                 android:paddingLeft="30dp"
                 android:paddingRight="30dp"
@@ -143,7 +147,7 @@
             <TextView
                 android:layout_width="140dp"
                 android:layout_height="wrap_content"
-                android:text="@string/followers"
+                android:text="Followers"
                 android:layout_toStartOf="@+id/tv_following2"
                 android:paddingTop="45dp"
                 android:paddingLeft="30dp"
@@ -154,7 +158,7 @@
             <TextView
                 android:layout_width="140dp"
                 android:layout_height="wrap_content"
-                android:text="@string/posts"
+                android:text="Posts"
                 android:layout_toEndOf="@+id/tv_following2"
                 android:paddingTop="45dp"
                 android:paddingLeft="30dp"
@@ -173,7 +177,7 @@
                 android:id="@+id/tv_information"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/information"
+                android:text="Information"
                 android:textStyle="bold"
                 android:textSize="20sp"
                 android:layout_marginTop="20dp"
@@ -182,7 +186,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/posts"
+                android:text="Posts"
                 android:textSize="20sp"
                 android:layout_marginTop="20dp"
                 android:layout_marginLeft="20dp"
@@ -208,7 +212,7 @@
                     android:textColor="@android:color/white"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/birth"
+                    android:text="30 Agustus 1999"
                     android:layout_marginTop="20dp"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
@@ -229,7 +233,7 @@
                     android:textColor="@android:color/white"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/hp"
+                    android:text="+62822-4737-0043"
                     android:layout_marginTop="20dp"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"

@@ -1,5 +1,13 @@
 <resources>
     <string name="app_name">SujudProfile</string>
     <string name="username">\@sujudss</string>
-    <string name="campus">Teknik Informatika S1 \nInstitut Teknologi Nasional Malang</string>
+    <string name="name">Sujud Satwikayana</string>
+    <string name="address">Klungkung, Bali, Indonesia</string>
+    <string name="str_btn_follow">Follow</string>
+    <string name="followers">Followers</string>
+    <string name="following">Following</string>
+    <string name="posts">Posts</string>
+    <string name="information">Information</string>
+    <string name="birth">30 August 1999</string>
+    <string name="hp">+62822-4737-0043</string>
 </resources>
